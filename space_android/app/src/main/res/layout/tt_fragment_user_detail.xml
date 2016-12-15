@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="头像"
+            android:textSize="@dimen/text_size_14"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/user_portrait"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/tt_default_user_portrait_corner"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sex"
+            android:textSize="12sp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/check_register_sex"
+                android:drawablePadding="5dp"
+                android:text="男"
+                android:textColor="@color/gray"/>
+
+            <RadioButton
+                android:id="@+id/rb_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/check_register_sex"
+                android:drawablePadding="5dp"
+                android:text="女"
+                android:textColor="@color/gray"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingBottom="12dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:textSize="12sp"/>
+
+        <EditText
+            android:id="@+id/nickName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:maxLength="30"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/gray"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingBottom="12dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="手机号"
+            android:textSize="12sp"/>
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:maxLength="30"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_12"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingBottom="12dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="12dp"
+        android:weightSum="1"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="生日"
+            android:textSize="@dimen/text_size_12"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:id="@+id/et_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:maxLength="30"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_12"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingBottom="12dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="12dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="粉丝数"
+            android:textSize="@dimen/text_size_12"
+            android:layout_weight="0.02" />
+
+        <TextView
+            android:id="@+id/fans_cnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:maxLength="30"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_12"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@android:color/white"
+        android:paddingBottom="12dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/signature"
+            android:textSize="@dimen/text_size_12"/>
+
+        <EditText
+            android:id="@+id/et_signature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="这个人太懒,什么都没有留下"
+            android:lines="3"
+            android:selectAllOnFocus="true"
+            android:textColorHint="@color/silver1"
+            android:textSize="@dimen/text_size_10"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingBottom="12dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="25dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="邀请码"
+            android:textSize="@dimen/text_size_12"/>
+
+        <TextView
+            android:id="@+id/tv_referralcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:selectAllOnFocus="true"
+            android:text="无"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_12"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingBottom="12dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="25dp"
+        android:paddingTop="12dp"
+        >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="邀请码分享"
+            android:textSize="@dimen/text_size_12"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:selectAllOnFocus="true"
+            android:text=""
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_12"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/view2" />
+
+    <TextView
+        android:id="@+id/tv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:background="@drawable/shape_circle_solid"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18"/>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/default_fragment_bk_color"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/user_container"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="252.5dp"-->
+            <!--android:layout_marginTop="0dp"-->
+            <!--android:background="@color/user_detail_base"-->
+            <!--android:padding="0dp">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/user_portrait"-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/tt_default_user_portrait_corner"/>-->
+
+            <!--&lt;!&ndash;<com.mogujie.tt.ui.widget.IMBaseImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/user_portrait"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="150dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="150dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="25dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:scaleType="centerCrop"/>&ndash;&gt;-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/nickName"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/user_portrait"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:textSize="20sp"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/userName"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/nickName"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--android:textColor="@color/default_light_grey_color"-->
+                <!--android:textSize="14sp"/>-->
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/sex"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginRight="8dp"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="#ff71A8"-->
+                <!--android:textStyle="italic"-->
+                <!--android:visibility="gone"/>-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<TableLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/contact_list_item_bk"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:paddingLeft="20dp"-->
+            <!--android:shrinkColumns="1">-->
+
+            <!--<View-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="0.5dp"-->
+                <!--android:background="@color/default_line_color"/>-->
+
+            <!--<TableRow-->
+                <!--android:id="@+id/phoneArea"-->
+                <!--android:clickable="true">-->
+
+                <!--<TextView-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:layout_column="1"-->
+                    <!--android:gravity="left|center_vertical"-->
+                    <!--android:padding="3dip"-->
+                    <!--android:text="手机"-->
+                    <!--android:textColor="@color/default_key_color"-->
+                    <!--android:textSize="15sp"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/telno"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:layout_marginLeft="15dp"-->
+                    <!--android:gravity="left|center_vertical"-->
+                    <!--android:padding="3dip"-->
+                    <!--android:text=""-->
+                    <!--android:textColor="@color/default_value_color"-->
+                    <!--android:textSize="15sp"/>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"/>-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/im_phone_pic"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center|right"-->
+                    <!--android:layout_marginRight="15dp"-->
+                    <!--android:background="@drawable/tele"-->
+                    <!--android:padding="3dip"/>-->
+            <!--</TableRow>-->
+
+            <!--<View-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="0.5dp"-->
+                <!--android:background="@color/default_line_color"/>-->
+
+            <!--&lt;!&ndash;-->
+        <!--<TableRow>-->
+
+            <!--<TextView-->
+                <!--android:layout_height="45dp"-->
+                <!--android:layout_column="1"-->
+                <!--android:gravity="left|center_vertical"-->
+                <!--android:padding="3dip"-->
+                <!--android:text="生日"-->
+                <!--android:textColor="@color/default_key_color"-->
+                <!--android:textSize="15sp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/birthday"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:gravity="left|center_vertical"-->
+                <!--android:padding="3dip"-->
+                <!--android:text="1990/12/12"-->
+                <!--android:textColor="@color/default_value_color"-->
+                <!--android:textSize="15sp" />-->
+        <!--</TableRow>-->
+
+        <!--<View-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="0.5dp"-->
+            <!--android:background="@color/default_line_color" />-->
+            <!--&ndash;&gt;-->
+
+            <!--<TableRow-->
+                <!--android:id="@+id/emailArea"-->
+                <!--android:clickable="true">-->
+
+                <!--<TextView-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:layout_column="1"-->
+                    <!--android:gravity="left|center_vertical"-->
+                    <!--android:padding="3dip"-->
+                    <!--android:text="邮箱"-->
+                    <!--android:textColor="@color/default_key_color"-->
+                    <!--android:textSize="15sp"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/email"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:layout_marginLeft="15dp"-->
+                    <!--android:gravity="left|center_vertical"-->
+                    <!--android:padding="3dip"-->
+                    <!--android:text=""-->
+                    <!--android:textColor="@color/default_value_color"-->
+                    <!--android:textSize="15sp"/>-->
+            <!--</TableRow>-->
+
+        <!--</TableLayout>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/chat_btn"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="45.5dp"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:layout_marginTop="25dp"-->
+            <!--android:background="@drawable/shape_circle_solid"-->
+            <!--android:text="@string/chat"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="19sp"/>-->
+    <!--</LinearLayout>-->
+
+    <ProgressBar
+
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/tt_progressbar"
+        android:indeterminateDuration="1000"
+        android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_default_height"
+        android:orientation="horizontal"
+        >
+
+        <com.tenth.space.ui.widget.MyLinearLayout
+            android:id="@+id/mll_tab_bar"
+            android:layout_width="336dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+        </com.tenth.space.ui.widget.MyLinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_add_blog"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/tt_add_blog"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f0f0"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="评论"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:background="#ffffff"
+            android:focusable="true"
+            android:gravity="top"
+            android:minLines="3"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            >
+
+            <Button
+                android:id="@+id/btn_submit_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selector_btn_bg"
+                android:padding="7dp"
+                android:text="提交"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                />
+
+            <Button
+                android:id="@+id/btn_cancel_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/btn_submit_comment"
+                android:background="@drawable/selector_btn_bg"
+                android:padding="7dp"
+                android:text="取消"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

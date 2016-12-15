@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <com.tenth.space.ui.widget.AutoFitTextureView
+        android:id="@+id/texture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/rg_navigition"
+        android:orientation="horizontal"
+        android:background="@color/custom_bottom"
+        >
+        <Space
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:id="@+id/rb_01"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="推荐"
+            android:gravity="center"
+            android:background="@drawable/selector_text_bottom_line"
+            android:layout_marginBottom="2dp"
+            android:textSize="16sp"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_02"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="好友"
+            android:gravity="center"
+            android:background="@drawable/selector_text_bottom_line"
+            android:layout_marginBottom="2dp"
+            android:textSize="16sp"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_03"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="关注"
+            android:gravity="center"
+            android:background="@drawable/selector_text_bottom_line"
+            android:layout_marginBottom="2dp"
+            android:textSize="16sp"
+            />
+        <Space
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/rg_navigition"
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"></android.support.v4.view.ViewPager>
+
+
+    <!--<com.mogujie.tt.customHome.VerticalViewPager-->
+        <!--android:visibility="gone"-->
+        <!--android:background="#ffffff"-->
+        <!--android:id="@+id/vertical_viewpager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"></com.mogujie.tt.customHome.VerticalViewPager>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:orientation="horizontal">-->
+
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="m+">-->
+        <!--</ImageView>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="m+">-->
+        <!--</ImageView>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="m+">-->
+        <!--</ImageView>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="m+">-->
+        <!--</ImageView>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="m+">-->
+        <!--</ImageView>-->
+    <!--</LinearLayout>-->
+    <!--
+    <FrameLayout
+        android:id="@+id/control"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" >
+
+        <Button
+            android:id="@+id/picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="picture" />
+
+    </FrameLayout> -->
+
+</RelativeLayout>

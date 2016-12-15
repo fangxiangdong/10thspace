@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="5dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_marginLeft="5dp"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_marginLeft="5dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:textColor="#9d9d9d"/>
+
+
+
+    <EditText
+        android:id="@+id/msg"
+        android:layout_marginLeft="5dp"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:hint="输入验证信息"
+        android:textSize="14sp"
+        android:layout_marginRight="10dp"
+        />
+    <TextView
+    android:id="@+id/add"
+    android:layout_width="80dp"
+    android:layout_height="26dp"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:layout_gravity="right|center_vertical"
+    android:background="@drawable/shape_circle_solid"
+    android:textColor="#4d4d4d"
+    android:text="添加好友"
+    android:layout_marginRight="10dp"
+        android:textSize="12sp"
+    android:padding="2dp"/>
+
+    <TextView
+            android:id="@+id/chat"
+            android:layout_width="50dp"
+            android:layout_height="26dp"
+            android:clickable="false"
+            android:padding="5dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#4d4d4d"
+            android:visibility="gone"
+            android:background="@drawable/shape_circle_solid"
+            android:layout_marginRight="20dp"
+            android:textSize="12sp"
+            android:text="发信息" />
+</LinearLayout>

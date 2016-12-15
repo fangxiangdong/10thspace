@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:padding="5dp"
+                android:id="@+id/tab_btn_container"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        >
+
+        <ImageView
+            android:id="@+id/tab_btn_default"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="default_tab_image"
+            android:scaleType="centerInside"
+            android:src="@drawable/discussion_group_default"
+             />
+
+        <TextView
+            android:layout_marginRight="5dp"
+            android:id="@+id/tab_unread_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/tt_message_notify"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            android:textSize="8sp"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tab_btn_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="聊天"
+        android:textSize="12sp"/>
+</LinearLayout>

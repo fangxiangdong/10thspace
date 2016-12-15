@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:background="#4d4d4d"
+        android:padding="3dp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/tv_total_count"
+
+        />
+        <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/binear_vp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"></android.support.v4.view.ViewPager>
+            <LinearLayout
+                android:id="@+id/ll_binear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="5dp"
+                >
+            </LinearLayout>
+
+
+
+
+        </FrameLayout>
+
+    <GridView
+        android:padding="3dp"
+        android:horizontalSpacing="3dp"
+        android:verticalSpacing="3dp"
+        android:listSelector="@null"
+        android:clipToPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gv"
+        android:numColumns="2"
+        ></GridView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:indeterminateDrawable="@drawable/tt_progressbar"
+            android:indeterminateDuration="4000"
+            />
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:text="加载中……"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
