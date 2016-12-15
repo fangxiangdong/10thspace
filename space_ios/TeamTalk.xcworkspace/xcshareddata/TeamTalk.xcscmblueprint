@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8cf5d6a6-3d4a-40f4-8a1f-ba04026bfa8c++6291",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "8cf5d6a6-3d4a-40f4-8a1f-ba04026bfa8c++6291" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8cf5d6a6-3d4a-40f4-8a1f-ba04026bfa8c++6291" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F340D2C0-6706-49EB-9FD3-F2593E77D41A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8cf5d6a6-3d4a-40f4-8a1f-ba04026bfa8c++6291" : "im\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TeamTalk",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios\/TeamTalk.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/120.24.178.15\/jingyusheng",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8cf5d6a6-3d4a-40f4-8a1f-ba04026bfa8c++6291"
+    }
+  ]
+}
