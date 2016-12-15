@@ -1,0 +1,83 @@
+package IM.Blog;
+import "IM.BaseDefine.proto";
+option java_package = "com.tenth.space.protobuf";
+//option java_outer_classname = "MOGUJIEIMMessage";
+option optimize_for = LITE_RUNTIME;
+
+
+message IMBlogSend{
+	//cmd id:		0x0A01
+	required uint32 user_id = 1;
+	/*
+	blog_data为json数据 {"BlogText":"","BlogImages":"","BlogAudio":""}
+	*/
+	//消息发送方
+	required bytes blog_data = 2;
+	optional bytes attach_data = 20;
+}
+
+message IMBlogSendAck{
+	//cmd id:		0x0A02
+	required uint32 user_id = 1;			//发送此信令的用户id
+	required uint32 blog_id = 2;
+	required uint32 update_time = 3;				
+	optional bytes attach_data = 20;
+}
+
+message IMBlogGetListReq{
+	//cmd id:		0x0A03
+	required uint32 user_id = 1;
+	required uint32 update_time = 2;
+	required IM.BaseDefine.BlogType blog_type = 3;
+	required uint32 page = 4;
+	required uint32 page_size = 5;
+	//required uint32 msg_id_begin = 4;
+	//required uint32 msg_cnt = 5;
+	optional bytes attach_data = 20;
+}
+
+message IMBlogGetListRsp{
+	//cmd id:		0x0A04
+	required uint32 user_id = 1;
+	required IM.BaseDefine.BlogType blog_type = 2;
+	required uint32 page = 3;
+	required uint32 page_size = 4;
+	repeated IM.BaseDefine.BlogInfo blog_list = 5;
+	optional bytes attach_data = 20;
+}
+
+//blog评论
+message IMBlogAddCommentReq{
+	//cmd id:		0x0A05
+	required uint32 user_id = 1;
+	required uint32 blog_id = 2;
+	required bytes blog_data = 3;
+	optional bytes attach_data = 20;
+}
+
+message IMBlogAddCommentRsp{
+	//cmd id:		0x0A06
+	required uint32 user_id = 1;
+	required uint32 comment_id = 2;
+	required uint32 update_time = 3;
+	required uint32 result_code = 4;
+	optional bytes attach_data = 20;
+}
+
+//读取blog评论
+message IMBlogGetCommentReq{
+	//cmd id:		0x0A07
+	required uint32 user_id = 1;
+	required uint32 blog_id = 2;
+	required uint32 update_time = 3;
+	optional bytes attach_data = 20;
+}
+
+message IMBlogGetCommentRsp{
+	//cmd id:		0x0A08
+	required uint32 user_id = 1;
+	required uint32 blog_id = 2;
+	required uint32 update_time = 3;
+	repeated IM.BaseDefine.BlogInfo comment_list = 4;
+	optional bytes attach_data = 20;
+}
