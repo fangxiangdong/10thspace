@@ -1,0 +1,1 @@
+/home/neil/project/space/server/src/slog/CMakeFiles/slog.dir
